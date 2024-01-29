@@ -8,7 +8,6 @@ const createContact_mahasiswaValidation = joi.object({
     program_studi: Joi.string().max(100).required(),
     email: Joi.string().max(200).email().optional(),
     phone: Joi.string().max(20).optional()
-
 });
 
 const getContact_mahasiswaValidation = joi.number().positive().required();
@@ -40,5 +39,4 @@ export {
     getContact_mahasiswaValidation,
     updateContact_mahasiswaValidation,
     searchContact_mahasiswaValidation
-
 }
